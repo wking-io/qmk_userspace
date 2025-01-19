@@ -2,40 +2,8 @@
     "userspace_version": "1.1",
     "build_targets": [
         [
-            "lily58/rev1",
-            "jesseleite"
-        ],
-        [
-            "lily58/rev1",
-            "jesseleite",
-            {
-                "CONVERT_TO": "rp2040_ce"
-            }
-        ],
-        [
-            "lily58/rev1",
-            "tester",
-            {
-                "CONVERT_TO": "rp2040_ce"
-            }
-        ],
-        [
-            "lily58/rev1",
-            "via",
-            {
-                "CONVERT_TO": "rp2040_ce"
-            }
-        ],
-        [
             "crkbd/rev1",
-            "jesseleite",
-            {
-                "CONVERT_TO": "rp2040_ce"
-            }
-        ],
-        [
-            "crkbd/rev1",
-            "via",
+            "wking",
             {
                 "CONVERT_TO": "rp2040_ce"
             }
