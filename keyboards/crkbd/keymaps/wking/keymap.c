@@ -122,11 +122,9 @@ const key_override_t *key_overrides[] = {
 // Handle combos
 // ------------------------------------------------------------------------------
 
-const uint16_t PROGMEM hyper[] = {KC_D, KC_F, COMBO_END};
-const uint16_t PROGMEM big_hyper[] = {KC_S, KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM big_hyper[] = {KC_RAIS, KC_ENT, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(hyper, LCMD(LOPT(KC_LCTL))),
     COMBO(big_hyper, LSFT(LCMD(LOPT(KC_LCTL)))),
 };
 
