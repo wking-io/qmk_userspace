@@ -109,7 +109,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
-
 // -----------------------------------------------------------------------------
 // Register global key overrides
 // ------------------------------------------------------------------------------
