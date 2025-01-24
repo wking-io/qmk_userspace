@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // +------+------+------+------+------+------+                      +------+------+------+------+------+------+
          LCBR , BSLS ,      ,      , QUES , LBRC ,                        RBRC ,  P1  ,  P2  ,  P3  , SLSH , RCBR ,
     // +------+------+------+------+------+------+------/        \------+------+------+------+------+------+------+
-                                       ,      ,       ,                    , RAI0 ,
+                                       ,      ,  HYPR ,                    , RAI0 ,
     //                          +------+------+------/              \------+------+------+
   ),
 
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // +------+------+------+------+------+------+                      +------+------+------+------+------+------+
               ,  F11 ,  F12 ,  xx  ,  xx  ,  xx  ,                        MPRV , VOLD , VOLU , MNXT , MUTE , MPLY ,
     // +------+------+------+------+------+------+------+        +------+------+------+------+------+------+------+
-                                       ,      ,  SPOT ,                    ,      ,
+                                       ,      ,  SPOT ,               HYPR ,      ,
     //                          +------+------+------/              \------+------+------+
   ),
 
@@ -116,18 +116,6 @@ const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC
 const key_override_t *key_overrides[] = {
   &delete_key_override,
 };
-
-
-// -----------------------------------------------------------------------------
-// Handle combos
-// ------------------------------------------------------------------------------
-
-const uint16_t PROGMEM big_hyper[] = {KC_RAIS, KC_ENT, COMBO_END};
-
-combo_t key_combos[] = {
-    COMBO(big_hyper, LSFT(LCMD(LOPT(KC_LCTL)))),
-};
-
 
 // -----------------------------------------------------------------------------
 // Handle user keycodes
