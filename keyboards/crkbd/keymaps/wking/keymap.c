@@ -34,6 +34,7 @@ enum layer_number {
 #define KC_ZMIN LCMD(KC_EQL)         // Zoom in
 #define KC_ZMOT LCMD(KC_MINS)        // Zoom out
 #define KC_ZMRS LCMD(KC_0)           // Zoom reset
+#define KC_HYPE HYPR_T(KC_ENT)       // Hold for hyper, tap for enter
 
 
 // -----------------------------------------------------------------------------
@@ -50,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // +------+------+------+------+------+------+                      +------+------+------+------+------+------+
          LSPO ,  Z   ,  X   ,  C   ,  V   ,  B   ,                         N   ,  M   , COMM , DOT  , SLSH , RSPC ,
     // +------+------+------+------+------+------+------/        \------+------+------+------+------+------+------+
-                                  CMDO , LWRT ,  SPC  ,              ENT   , RAIS , BSPC
+                                  CMDO , LWRT ,  SPC  ,             HYPE   , RAIS , BSPC
     //                          +------+------+------/              \------+------+------+
   ),
 
@@ -62,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // +------+------+------+------+------+------+                      +------+------+------+------+------+------+
          LCBR , BSLS ,      ,      , QUES , LBRC ,                        RBRC ,  P1  ,  P2  ,  P3  , SLSH , RCBR ,
     // +------+------+------+------+------+------+------/        \------+------+------+------+------+------+------+
-                                       ,      ,  HYPR ,                    , RAI0 ,
+                                       ,      ,      ,                    , RAI0 ,
     //                          +------+------+------/              \------+------+------+
   ),
 
@@ -74,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // +------+------+------+------+------+------+                      +------+------+------+------+------+------+
               ,  F11 ,  F12 ,  xx  ,  xx  ,  xx  ,                        MPRV , VOLD , VOLU , MNXT , MUTE , MPLY ,
     // +------+------+------+------+------+------+------+        +------+------+------+------+------+------+------+
-                                       ,      ,  SPOT ,               HYPR ,      ,
+                                       ,      ,  SPOT ,                   ,      ,
     //                          +------+------+------/              \------+------+------+
   ),
 
